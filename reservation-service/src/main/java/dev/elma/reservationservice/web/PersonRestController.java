@@ -12,7 +12,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/person")
 @AllArgsConstructor
-@CrossOrigin("*")
 public class PersonRestController {
     private PersonRepo personRepo;
     private ReservationMapper reservationMapper;

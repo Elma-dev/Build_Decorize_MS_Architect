@@ -11,7 +11,6 @@ import java.util.List;
 
 @RestController
 @AllArgsConstructor
-@CrossOrigin("*")
 public class ResourceRestController {
     private ResourceRepo resourceRepo;
     @GetMapping("/all")
