@@ -1,9 +1,7 @@
 package dev.elma.ressource_service.entities;
 
 import dev.elma.ressource_service.enums.ResourceType;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
@@ -12,5 +10,6 @@ public class Resource {
     @Id @GeneratedValue
     private Long id;
     private String name;
+    @Enumerated(EnumType.STRING)
     private ResourceType type;
 }

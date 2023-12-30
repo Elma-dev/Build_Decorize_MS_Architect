@@ -29,6 +29,18 @@ public class ReservationServiceApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        List.of("Abdeljalil","Mohamed","Ali").forEach(
+                p->{
+                    Person person = Person
+                            .builder()
+                            .name(p)
+                            .function("functionality")
+                            .email(p + "@Gmail.com")
+                            .build();
+                    personRepo.save(person);
+
+                }
+        );
         Person person = Person
                 .builder()
                 .name("Ahmed")
