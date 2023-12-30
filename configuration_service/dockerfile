@@ -1,0 +1,4 @@
+FROM openjdk:17-oracle
+VOLUME /tmp
+COPY target/configuration_service-0.0.1-SNAPSHOT.jar configuration_service.jar
+ENTRYPOINT ["java","-jar","/configuration_service.jar"]
